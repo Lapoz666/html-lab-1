@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<body>
+	<h2><u>FORM</u></h2>
+	 <form >
+	 	<fieldset>
+	 	<label for="Uname">Name :</label>
+	 	<input type="text" id="Uname" name="Uname" maxlength="25" placeholder="Enter your name" required><br><br>
+	 	<label for="mail">E-mail :</label>
+	 	<input type="email" id="mail" name="mail" value="test@example.com" autofocus required><br><br>
+	 	<label for="pwd">Password :</label>
+	 	<input type="password" id="pwd" name="pwd" minlength="6"><br><br>
+	 	<label for="category">Category :</label>
+	 	<select id="category" name="category" required>         <!--dropbox-->
+	 		<option value="student">Student</option>
+	 		<option value="emp">Employee</option>
+	 		<option value="freelancer" selected>Freelancer</option>
+	 	</select><br><br>
+	 	<label for="Edate">Event-Date:</label>
+	 	<input type="date" id="Edate" name="Edate" required><br><br>
+	 	<label for="ticket" >Tickets :</label>
+	 	<input type="radio" id="ticket" name="tkt" value="ticket" required><span>1 Ticket</span>
+	 	<input type="radio" id="ticket" name="tkt" value="ticket" checked><span>2 Ticket</span>
+	 	<input type="radio" id="ticket" name="tkt" value="ticket"><span>3 Ticket</span><br><br>
+	 	<label for="pay">Online-payment:</label>
+	 	<input type="checkbox" id="pay" name="pymt" value="pay" required><span>Yes</span>
+	 	<input type="checkbox" id="pay" name="pymt" value="pay"><span>No</span>
+	 	<br>
+	 	<label for="note">Notes:</label><br />
+	 	<textarea rows="5" cols="50" name="notes"></textarea>
+	 	<input type="submit" value="submit" placeholder="Enter the notes">
+	 	</fieldset>
+	 </form>
+
+</body>
+</html>
