@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css lab4</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<style type="text/css">
+		div{
+			border: 4px solid black;
+			margin: 200px 250px;
+			height: 400px;
+			width: 850px;
+		}
+		input[type="search"]{
+			margin: 50px 50px 0px 650px;
+
+		}
+		
+		.one{
+
+			display: inline;
+		}
+		#heading{
+			padding: 5px 200px;
+			font-size:25px ;
+		}
+		
+		table{
+			border-collapse: collapse;
+			margin: 0px 50px;
+			width: 90%;
+			height: 40%;
+		}
+		th{
+			text-align: left;
+		}
+		.fa-eye{
+			color: #0CAFFF;
+		}
+		.fa-pencil{
+			color: #FFD700;
+		}
+		.fa-trash-o{
+			color: orangered;
+		}
+		.last{
+			padding: 10px 0px;
+			margin: 0px 50px;
+			display: inline;
+		}
+		.lt{
+			margin: 0px 0px 0px 610px;
+		}
+		a{
+			color: black;
+			text-decoration: none;
+			background-color: whitesmoke;
+		}
+		.li{
+			border-radius: 50%;
+			padding: 0.5%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<label  for="search"></label>
+		<input type="search" class="srh" id="search" name="search" placeholder="search"><br>
+		<label for="shw" class="one">&emsp;&emsp;&emsp;show</label>
+		<select id="shw" name="shw" class="one">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5" selected>5</option>
+		</select>
+		<span class="one">entries</span>
+		<p class="one" id="heading">Customer <b> Details</b></p><br><br><br>
+		<table border="2">
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Address</th>
+				<th>City</th>
+				<th>Pincode</th>
+				<th>Country</th>
+				<th>Actions</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Thomas Hardy</td>
+				<td>89 Chirasco Rd.</td>
+				<td>Portland</td>
+				<td>91219</td>
+				<td>USA</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash-o"></i>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Maria Anders</td>
+				<td>Obere Str.57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash-o"></i></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Fran Wilson</td>
+				<td>C/Araquil,67</td>
+				<td>Madrid</td>
+				<td>28023</td>
+				<td>Spain</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash-o"></i></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Dominic Perrier</td>
+				<td>25,rue Lauriston</td>
+				<td>Paris</td>
+				<td>75016</td>
+				<td>France</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash-o"></i></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Martin Blank</td>
+				<td>Via Monteblanco 34</td>
+				<td>Turin</td>
+				<td>10100</td>
+				<td>Italy</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash-o"></i></td>
+			</tr>
+		</table>
+		<p class="last">Showing <b>5</b> out of <b>25</b> entries</p>
+		<p class="last lt">
+			<a href="">Previous</a>
+			<a href="" class="li">1</a>
+			<a href="" class="li">2</a>
+			<a href="" class="li">3</a>
+			<a href="" class="li">4</a>
+			<a href="" class="li">5</a>
+			<a href="">Next</a>
+		</p>
+	</div>
+
+</body>
+</html>
