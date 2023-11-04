@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+    <style>
+        form{
+            margin-top: 80px;
+            margin-left: 200px;
+            border: 3px solid black;
+            width: 300px;
+            padding-left: 20px;
+        }
+        h2{
+            font-family: serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="signupForm" onsubmit="return validateForm()">
+        <h2><u>Signup Form</u></h2><br>
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email : </label>
+        <input type="text" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone : </label>
+        <input type="text" id="phone" name="phone" required><br><br>
+        
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Sign Up"><br><br>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var password = document.getElementById("password").value;
+            
+            if (name.length < 3 || /\d/.test(name)) {
+                alert("Name should be at least 3 characters long and should not contain numbers.");
+                return false;
+            }
+            
+            if (!isValidEmail(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            
+            if (phone.length < 10 || !/^\d{10,}$/.test(phone)) {
+                alert("Phone should be at least 10 digits long.");
+                return false;
+            }
+            
+            if (password.length < 6) {
+                alert("Password should be at least 6 characters long.");
+                return false;
+            }
+            
+            return true;
+        }
+
+        function isValidEmail(email) {
+
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+</body>
+</html>
